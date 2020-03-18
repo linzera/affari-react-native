@@ -4,7 +4,7 @@
  */
 import React, { useEffect, useState, useRef } from 'react';
 import { View, StyleSheet } from 'react-native';
-import { TextInput, Divider, Title, Button, Portal } from 'react-native-paper';
+import { TextInput, Divider, Title, Button } from 'react-native-paper';
 
 import { Modalize } from 'react-native-modalize';
 

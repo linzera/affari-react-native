@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useMemo } from 'react';
-import { View, StyleSheet, SectionList, LayoutAnimation } from 'react-native';
+import { View, StyleSheet, SectionList } from 'react-native';
 import { Title, FAB, Appbar, ProgressBar } from 'react-native-paper';
 
 import useTodo, { type Todo } from '~/hooks/useTodo';

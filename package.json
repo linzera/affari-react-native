@@ -7,7 +7,10 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "e2e:ios:release": "detox build --configuration ios.sim.release && detox test --configuration ios.sim.release --cleanup",
+    "e2e:ios:debug": "detox build --configuration ios.sim.debug && detox test --configuration ios.sim.debug --cleanup",
+    "e2e:ios:debug-run": "detox test --configuration ios.sim.debug --cleanup"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.8.1",
@@ -71,6 +74,14 @@
       "ios.sim.debug": {
         "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/affari.app",
         "build": "xcodebuild -workspace ios/affari.xcworkspace -scheme affari -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "device": {
+          "type": "iPhone 11 Pro"
+        }
+      },
+      "ios.sim.release": {
+        "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/affari.app",
+        "build": "xcodebuild -workspace ios/affari.xcworkspace -scheme affari -configuration Release -sdk iphonesimulator -derivedDataPath ios/build",
         "type": "ios.simulator",
         "device": {
           "type": "iPhone 11 Pro"
