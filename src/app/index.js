@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { Platform, UIManager } from 'react-native';
-import { Provider as PaperProvider, Portal } from 'react-native-paper';
+import { Provider as PaperProvider } from 'react-native-paper';
 import { IntlProvider } from 'react-intl';
 
 import RootNavigation from '~/navigation/RootNavigation';
@@ -20,11 +20,9 @@ if (Platform.OS === 'android') {
 function App() {
   return (
     <PaperProvider theme={theme}>
-      <IntlProvider locale="pt-BR">
+      <IntlProvider locale="pt-BR" timeZone="America/Sao_Paulo">
         <TodoProvider>
-          <Portal.Host>
-            <RootNavigation />
-          </Portal.Host>
+          <RootNavigation />
         </TodoProvider>
       </IntlProvider>
     </PaperProvider>

@@ -48,13 +48,21 @@ export function TodoProvider(props: Props) {
     isLoading: true,
   });
 
+  function persistTodos() {
+    AsyncStorage.setItem(STORAGE_KEY, JSON.stringify({ todos: values.todos }));
+  }
+
   useEffect(() => {
     async function getTodosFromStorage() {
       const result = await AsyncStorage.getItem(STORAGE_KEY);
 
-      const parsedResult = JSON.parse(result);
+      if (result === null) {
+        persistTodos();
+        setValues({ ...values, isLoading: false });
+      }
 
-      if (parsedResult) {
+      if (result) {
+        const parsedResult = JSON.parse(result);
         setValues({ isLoading: false, todos: parsedResult.todos });
       }
     }
@@ -63,7 +71,7 @@ export function TodoProvider(props: Props) {
   }, []);
 
   useEffect(() => {
-    AsyncStorage.setItem(STORAGE_KEY, JSON.stringify({ todos: values.todos }));
+    persistTodos();
   }, [values.todos]);
 
   function addTodo(newTodoName: string) {

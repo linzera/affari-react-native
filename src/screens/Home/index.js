@@ -44,7 +44,7 @@ function todoSections(todos: Todo[]) {
       data: todos.filter(item => !item.finished),
     },
     {
-      title: 'Tarefas completadas',
+      title: 'Tarefas concluídas',
       data: todos.filter(item => item.finished),
     },
   ];
@@ -89,7 +89,7 @@ export default function HomeScreen() {
       </Appbar.Header>
       <Choose>
         <When condition={isLoading}>
-          <ProgressBar indeterminate visible={isLoading} progress={1} />
+          <ProgressBar indeterminate visible progress={1} />
         </When>
         <When condition={hasTodoItems}>
           <>
@@ -101,13 +101,15 @@ export default function HomeScreen() {
               renderSectionHeader={renderSectionHeader}
               renderItem={renderItem}
             />
-            <FAB
-              testID="TodoFAB"
-              style={styles.fab}
-              color="white"
-              icon="plus"
-              onPress={openForm}
-            />
+            <If condition={!formVisibility}>
+              <FAB
+                testID="TodoFAB"
+                style={styles.fab}
+                color="white"
+                icon="plus"
+                onPress={openForm}
+              />
+            </If>
           </>
         </When>
         <Otherwise>

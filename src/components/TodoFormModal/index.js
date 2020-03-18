@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
   },
   title: { fontSize: 24 },
   input: { marginTop: 16 },
+  modal: {},
 });
 
 type Props = {
@@ -51,34 +52,34 @@ export default function TodoFormModal({ isVisible, onDismiss }: Props) {
   }
 
   return (
-    <Portal>
-      <Modalize
-        keyboardAvoidingBehavior="padding"
-        adjustToContentHeight
-        scrollViewProps={{ keyboardShouldPersistTaps: 'always' }}
-        ref={modalizeRef}
-        onClosed={onDismiss}>
-        <View testID="TodoForm" style={styles.container}>
-          <Title style={styles.title}>Nova tarefa</Title>
-          <Divider />
-          <TextInput
-            testID="TodoFormInput"
-            value={newTodoName}
-            onChangeText={value => setTodoName(value)}
-            style={styles.input}
-            label="Nome"
-            autoFocus
-            onSubmitEditing={onSubmit}
-          />
-          <Button
-            accessibilityLabel="Button"
-            style={styles.button}
-            mode="outlined"
-            onPress={onSubmit}>
-            Adicionar
-          </Button>
-        </View>
-      </Modalize>
-    </Portal>
+    <Modalize
+      keyboardAvoidingBehavior="padding"
+      adjustToContentHeight
+      scrollViewProps={{
+        keyboardShouldPersistTaps: 'always',
+      }}
+      modalStyle={styles.modal}
+      ref={modalizeRef}
+      onClosed={onDismiss}>
+      <View testID="TodoForm" style={styles.container}>
+        <Title style={styles.title}>Nova tarefa</Title>
+        <Divider />
+        <TextInput
+          testID="TodoFormInput"
+          value={newTodoName}
+          onChangeText={value => setTodoName(value)}
+          style={styles.input}
+          label="Nome"
+          onSubmitEditing={onSubmit}
+        />
+        <Button
+          accessibilityLabel="Button"
+          style={styles.button}
+          mode="outlined"
+          onPress={onSubmit}>
+          Adicionar
+        </Button>
+      </View>
+    </Modalize>
   );
 }
