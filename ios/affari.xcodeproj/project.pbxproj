@@ -10,13 +10,12 @@
 		00E356F31AD99517003FC87E /* affariTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* affariTests.m */; };
 		03E19C5D6CBF718809BD360B /* libPods-affari-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A829EA8F6BEF8F1FEDE401E2 /* libPods-affari-tvOSTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
-		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* affariTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* affariTests.m */; };
+		3EB72C5D2421CDC90096C961 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB72C5C2421CDC90096C961 /* Images.xcassets */; };
+		3EB72C5F2421D14E0096C961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB72C5E2421D14E0096C961 /* LaunchScreen.storyboard */; };
 		836237B997C2EFA64558C7A2 /* libPods-affari.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 862ADE0F222E172E5F545546 /* libPods-affari.a */; };
 		A5EDE951D9884780F221E65E /* libPods-affari-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 019F274EE49EE08CA6AD4C50 /* libPods-affari-tvOS.a */; };
 		E36E54E42FA3F73CB25BC0F0 /* libPods-affariTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C225888E5E1ED22A0DA13ACA /* libPods-affariTests.a */; };
@@ -46,15 +45,15 @@
 		00E356F21AD99517003FC87E /* affariTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = affariTests.m; sourceTree = "<group>"; };
 		019F274EE49EE08CA6AD4C50 /* libPods-affari-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-affari-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EA42C8DEB859BD9C57BC1F8 /* Pods-affari-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-affari-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-affari-tvOS/Pods-affari-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* affari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = affari.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Affari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Affari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = affari/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = affari/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = affari/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = affari/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = affari/main.m; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* affari-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "affari-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* affari-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "affari-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EB72C5C2421CDC90096C961 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../Downloads/AppIcons/Images.xcassets; sourceTree = "<group>"; };
+		3EB72C5E2421D14E0096C961 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52678598149E7D25733C4443 /* Pods-affari.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-affari.release.xcconfig"; path = "Target Support Files/Pods-affari/Pods-affari.release.xcconfig"; sourceTree = "<group>"; };
 		62DA818E9215087E24C38019 /* Pods-affari-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-affari-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-affari-tvOSTests/Pods-affari-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		862ADE0F222E172E5F545546 /* libPods-affari.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-affari.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,13 +124,13 @@
 		13B07FAE1A68108700A75B9A /* affari */ = {
 			isa = PBXGroup;
 			children = (
+				3EB72C5C2421CDC90096C961 /* Images.xcassets */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
-				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				3EB72C5E2421D14E0096C961 /* LaunchScreen.storyboard */,
 			);
 			name = affari;
 			sourceTree = "<group>";
@@ -174,7 +173,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* affari.app */,
+				13B07F961A680F5B00A75B9A /* Affari.app */,
 				00E356EE1AD99517003FC87E /* affariTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* affari-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* affari-tvOSTests.xctest */,
@@ -194,7 +193,6 @@
 				AA08152EF86DBA8AE1ED89D9 /* Pods-affariTests.debug.xcconfig */,
 				DB0221678258474D6CA9E155 /* Pods-affariTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -238,7 +236,7 @@
 			);
 			name = affari;
 			productName = affari;
-			productReference = 13B07F961A680F5B00A75B9A /* affari.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Affari.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2D02E47A1E0B4A5D006451C7 /* affari-tvOS */ = {
@@ -309,6 +307,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -337,8 +336,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				3EB72C5D2421CDC90096C961 /* Images.xcassets in Resources */,
+				3EB72C5F2421D14E0096C961 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +345,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,18 +612,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13B07FB21A68108700A75B9A /* Base */,
-			);
-			name = LaunchScreen.xib;
-			path = affari;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -685,7 +671,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = affari;
+				PRODUCT_NAME = Affari;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -704,7 +690,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = affari;
+				PRODUCT_NAME = Affari;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
