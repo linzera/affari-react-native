@@ -12,3 +12,8 @@ jest.mock('react-native/Libraries/LayoutAnimation/LayoutAnimation', () => ({
   ),
   configureNext: jest.fn(),
 }));
+
+jest.mock('react-native-splash-screen', () => ({
+  show: jest.fn(),
+  hide: jest.fn(),
+}));
