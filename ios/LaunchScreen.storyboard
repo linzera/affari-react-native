@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -13,19 +13,17 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AffariLogo" translatesAutoresizingMaskIntoConstraints="NO" id="w4H-JG-80j">
-                                <rect key="frame" x="66.666666666666657" y="299.66666666666663" width="280.66666666666674" height="296.66666666666663"/>
+                                <rect key="frame" x="-120.5" y="-12.5" width="561" height="593"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.54509803921568623" green="0.76470588235294112" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="w4H-JG-80j" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="LuD-9s-o2u"/>
-                            <constraint firstItem="w4H-JG-80j" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PQ2-bm-hfD"/>
-                            <constraint firstItem="w4H-JG-80j" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="cVX-WM-N8g"/>
-                            <constraint firstItem="w4H-JG-80j" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jHw-1C-VHF"/>
+                            <constraint firstItem="w4H-JG-80j" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6Tb-Zb-STk"/>
+                            <constraint firstItem="w4H-JG-80j" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="d79-mq-dat"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                     </view>
@@ -36,6 +34,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AffariLogo" width="280.33334350585938" height="296.66665649414062"/>
+        <image name="AffariLogo" width="280.5" height="296.5"/>
     </resources>
 </document>

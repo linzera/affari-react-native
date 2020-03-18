@@ -3,10 +3,11 @@
  * @flow
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Platform, UIManager } from 'react-native';
 import { Provider as PaperProvider } from 'react-native-paper';
 import { IntlProvider } from 'react-intl';
+import SplashScreen from 'react-native-splash-screen';
 
 import RootNavigation from '~/navigation/RootNavigation';
 import { TodoProvider } from '~/hooks/useTodo';
@@ -18,6 +19,10 @@ if (Platform.OS === 'android') {
 }
 
 function App() {
+  useEffect(() => {
+    SplashScreen.hide();
+  });
+
   return (
     <PaperProvider theme={theme}>
       <IntlProvider locale="pt-BR" timeZone="America/Sao_Paulo">
