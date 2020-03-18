@@ -2,11 +2,13 @@
  * @format
  */
 import React from 'react';
-import { render } from '@testing-library/react-native';
+import { render, wait } from '@testing-library/react-native';
 import RootNavigation from '../RootNavigation';
 
-test('<RootNavigation />', () => {
+test('<RootNavigation />', async () => {
   const { queryByText } = render(<RootNavigation />);
 
-  expect(queryByText(/Affari/i)).not.toBeNull();
+  await wait(() => {
+    expect(queryByText(/Affari/i)).not.toBeNull();
+  });
 });

@@ -3,11 +3,14 @@
  */
 
 import React from 'react';
-import { render } from '@testing-library/react-native';
+import { render, wait } from '@testing-library/react-native';
 
 import App from '../';
 
-test('<App />', () => {
+test('<App />', async () => {
   const { queryByText } = render(<App />);
-  expect(queryByText(/Affari/i)).not.toBeNull();
+
+  await wait(() => {
+    expect(queryByText(/Affari/i)).not.toBeNull();
+  });
 });
