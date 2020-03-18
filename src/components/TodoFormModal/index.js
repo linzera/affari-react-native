@@ -4,11 +4,11 @@
  */
 import React, { useEffect, useState, useRef } from 'react';
 import { View, StyleSheet } from 'react-native';
-import { TextInput, Divider, Title, Button } from 'react-native-paper';
+import { TextInput, Divider, Title, Button, Portal } from 'react-native-paper';
 
 import { Modalize } from 'react-native-modalize';
 
-import useTodo, { type Todo } from '../../hooks/useTodo';
+import useTodo from '~/hooks/useTodo';
 
 const styles = StyleSheet.create({
   button: {
@@ -51,32 +51,34 @@ export default function TodoFormModal({ isVisible, onDismiss }: Props) {
   }
 
   return (
-    <Modalize
-      keyboardAvoidingBehavior="padding"
-      adjustToContentHeight
-      scrollViewProps={{ keyboardShouldPersistTaps: 'always' }}
-      ref={modalizeRef}
-      onClosed={onDismiss}>
-      <View testID="TodoForm" style={styles.container}>
-        <Title style={styles.title}>Nova tarefa</Title>
-        <Divider />
-        <TextInput
-          testID="TodoFormInput"
-          value={newTodoName}
-          onChangeText={value => setTodoName(value)}
-          style={styles.input}
-          label="Nome"
-          autoFocus
-          onSubmitEditing={onSubmit}
-        />
-        <Button
-          accessibilityLabel="Button"
-          style={styles.button}
-          mode="outlined"
-          onPress={onSubmit}>
-          Adicionar
-        </Button>
-      </View>
-    </Modalize>
+    <Portal>
+      <Modalize
+        keyboardAvoidingBehavior="padding"
+        adjustToContentHeight
+        scrollViewProps={{ keyboardShouldPersistTaps: 'always' }}
+        ref={modalizeRef}
+        onClosed={onDismiss}>
+        <View testID="TodoForm" style={styles.container}>
+          <Title style={styles.title}>Nova tarefa</Title>
+          <Divider />
+          <TextInput
+            testID="TodoFormInput"
+            value={newTodoName}
+            onChangeText={value => setTodoName(value)}
+            style={styles.input}
+            label="Nome"
+            autoFocus
+            onSubmitEditing={onSubmit}
+          />
+          <Button
+            accessibilityLabel="Button"
+            style={styles.button}
+            mode="outlined"
+            onPress={onSubmit}>
+            Adicionar
+          </Button>
+        </View>
+      </Modalize>
+    </Portal>
   );
 }

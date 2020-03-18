@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useMemo } from 'react';
-import { View, StyleSheet, SectionList } from 'react-native';
+import { View, StyleSheet, SectionList, LayoutAnimation } from 'react-native';
 import { Title, FAB, Appbar, ProgressBar } from 'react-native-paper';
 
 import useTodo, { type Todo } from '~/hooks/useTodo';
@@ -27,9 +27,13 @@ const styles = StyleSheet.create({
     margin: 16,
     right: 0,
     bottom: 0,
+    zIndex: 1,
   },
   title: {
     color: 'white',
+  },
+  header: {
+    elevation: 0,
   },
 });
 
@@ -80,8 +84,8 @@ export default function HomeScreen() {
 
   return (
     <>
-      <Appbar.Header>
-        <Appbar.Content color="white" title="Affari" subtitle="Tarefas" />
+      <Appbar.Header style={styles.header}>
+        <Appbar.Content color="white" title="Affari" />
       </Appbar.Header>
       <Choose>
         <When condition={isLoading}>
