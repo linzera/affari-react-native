@@ -23,7 +23,7 @@ test('<EmptyState />', () => {
   expect(queryAllByText(/Some subtitle/i)).not.toBeNull();
   expect(queryAllByText(/Press me/i)).not.toBeNull();
 
-  const button = queryByLabelText('Button');
+  const button = queryByLabelText('EmptyStateButton');
 
   fireEvent.press(button);
 

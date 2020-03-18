@@ -31,7 +31,7 @@ test('<TodoFormModal />', async () => {
   expect(queryByTestId('TodoForm')).not.toBeNull();
 
   const input = queryByTestId('TodoFormInput');
-  const submitButton = queryByLabelText('Button');
+  const submitButton = queryByLabelText('TodoFormSubmitButton');
 
   fireEvent.changeText(input, 'Some new task');
   fireEvent.press(submitButton);
