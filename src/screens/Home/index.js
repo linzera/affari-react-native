@@ -83,7 +83,7 @@ export default function HomeScreen() {
   }
 
   return (
-    <>
+    <View testID="HomeScreen" style={styles.container}>
       <Appbar.Header style={styles.header}>
         <Appbar.Content color="white" title="Affari" />
       </Appbar.Header>
@@ -123,6 +123,6 @@ export default function HomeScreen() {
         </Otherwise>
       </Choose>
       <TodoFormModal isVisible={formVisibility} onDismiss={onDismissForm} />
-    </>
+    </View>
   );
 }

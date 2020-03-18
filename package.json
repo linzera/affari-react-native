@@ -36,6 +36,7 @@
     "babel-jest": "^25.1.0",
     "babel-plugin-jsx-control-statements": "^4.0.0",
     "babel-plugin-root-import": "^6.4.1",
+    "detox": "^16.0.0",
     "eslint": "^6.8.0",
     "eslint-plugin-jsx-control-statements": "^2.2.1",
     "jest": "^25.1.0",
@@ -63,5 +64,18 @@
     "moduleNameMapper": {
       "^<rootDir>/(.*)$": "<rootDir>/src/$1"
     }
+  },
+  "detox": {
+    "configurations": {
+      "ios.sim.debug": {
+        "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/affari.app",
+        "build": "xcodebuild -workspace ios/affari.xcworkspace -scheme affari -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "device": {
+          "type": "iPhone 11 Pro"
+        }
+      }
+    },
+    "test-runner": "jest"
   }
 }

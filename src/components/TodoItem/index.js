@@ -60,6 +60,7 @@ export default function TodoItem({ id, title, createdAt, finished }: Props) {
 
   return (
     <ListItem
+      testID="TodoListItem"
       title={title}
       description={`Criado em ${formatDate(createdAt)} ás ${formatTime(
         createdAt,

@@ -73,7 +73,8 @@ export default function TodoFormModal({ isVisible, onDismiss }: Props) {
           onSubmitEditing={onSubmit}
         />
         <Button
-          accessibilityLabel="Button"
+          accessibilityLabel="TodoFormSubmitButton"
+          contentDescription="TodoFormSubmitButton"
           style={styles.button}
           mode="outlined"
           onPress={onSubmit}>

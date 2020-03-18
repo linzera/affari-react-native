@@ -57,7 +57,8 @@ export default function EmptyState({
       </If>
       <If condition={!!buttonText}>
         <Button
-          accessibilityLabel="Button"
+          accessibilityLabel="EmptyStateButton"
+          contentDescription="EmptyStateButton"
           style={styles.button}
           labelStyle={styles.buttonLabel}
           mode="contained"
